@@ -51,7 +51,10 @@ def main():
         model_cfg, model_outputs = posenet.load_model(args.model, sess)
         output_stride = model_cfg['output_stride']
 
-        cap = cv2.VideoCapture(0)
+        if hasattr(args, 'cam_id'):
+            cap = cv2.VideoCapture(args.cam_id)
+        else:
+            cap = cv2.VideoCapture(0)
         cap.set(3, args.cam_width)
         cap.set(4, args.cam_height)
         

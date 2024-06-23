@@ -1,7 +1,6 @@
 # 0. 사용할 패키지 불러오기
 from keras.models import Sequential
 from keras.layers import Dense
-from keras.models import load_model
 import numpy as np
 import os 
 

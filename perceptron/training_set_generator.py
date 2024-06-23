@@ -6,8 +6,6 @@ import time
 import argparse
 sys.path.append(os.path.dirname(os.path.abspath(os.path.dirname(__file__))))
 import posenet
-import pickle
-import numpy as np
 import keyboard
 import asyncio
 
